@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/libraries/jquery.min.js"></script>
+    <script src="js/libraries/TweenMax.min.js"></script>
+    <script src="js/libraries/TimelineMax.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="cursor" class="Cursor"></div>
+    <div id="load">
+        <div class="loader abs-center">
+            <div class="sq-wrapper">
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+              <div class="sq-box">
+                <div class="sq-fill"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="elements">
+        <header>
+            <div class="topbar">
+                <div class="logo">
+                    <h1><span class="highligher">Siddhesh</span></h1>
+                </div>
+                <div class="connect">
+                    <a href="contact.html" class="sub mobhide">LET'S CONNECT !</a>
+                </div>
+                <div class="hamburguer">
+                    <div class="lines line-top"></div>
+                    <div class="lines line-mid"></div>
+                    <div class="lines line-bottom"></div>
+                </div>
+            </div>
+            <div class="full-menu">
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li class="home">Home</li>
+                        <li class="arts">3d Arts</li>
+                        <li class="web">Web Works</li>
+                        <li class="contact">Contact</li>
+                        <li class="resume">Resume</li>
+                    </ul>
+                    <ul class="social-icons">
+                        <li><a id="icon" href="twitter"><img src="images/icons/twitter.svg" alt="twitter"></a></li>
+                        <li><a id="icon" href="github"><img src="images/icons/github.svg" alt="github"></a></li>
+                        <li><a id="icon" href="linkedin"><img src="images/icons/linkedin.svg" alt="linkedin"></a></li>
+                        <li><a id="icon" href="mail"><img src="images/icons/mail.svg" alt="mail"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+        <div class="outer-wrapper">
+            <div id="scroll" class="content" data-scroll-speed="9">
+                <main class="hero">
+                    <h2>Hey there, My name is <span class="highligher">Siddhesh</span>. I'm a <span class="sec-highligher">3D Artist</span> & <span class="sec-highligher">Web Developer</span>, focused on frontend development.</h2>
+                </main>
+                <div class="rock-bg">
+                    <section class="about">
+                        <h2>About</h2>
+                        <p>I'm a highly motivated individual who likes to work in 3D softwares like Autodesk MAYA, 3DS Max, Cinema 4D & Fusion 360. I have 3 years of experience in web design and  development. I have worked with technologies including HTML5, SCSS, JavaScript, PHP, MySQL.</p>
+                    </section>
+                    <section class="my-skills">
+                        <h2>My skills</h2>
+                        <div class="sub-section">
+                            <div class="skills">
+                                <h3>Web design & development</h3>
+                                <div class="sub-skills">
+                                    <div class="row one">
+                                        <ul>
+                                            <li>html5</li>
+                                            <li>css / scss</li>
+                                            <li>javascript</li>
+                                            <li>react</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row two">
+                                        <ul>
+                                            <li>php</li>
+                                            <li>node js</li>
+                                            <li>experss</li>
+                                            <li>sql</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row three">
+                                        <ul>
+                                            <li>mysql</li>
+                                            <li>mongo db</li>
+                                            <li>adobe xd / figma</li>
+                                            <li>wordpress</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <h3>3d art</h3>
+                                <div class="sub-skills">
+                                    <div class="row one">
+                                        <ul>
+                                            <li>maya</li>
+                                            <li>fusion 360</li>
+                                            <li>3ds max</li>
+                                            <li>zbrush</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row two">
+                                        <ul>
+                                            <li>cinema 4d</li>
+                                            <li>photoshop</li>
+                                            <li>v-ray</li>
+                                            <li>corona</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row three">
+                                        <ul>
+                                            <li>3d modelling</li>
+                                            <li>archviz</li>
+                                            <li>packaging design</li>
+                                            <li>product photography</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="services">
+                        <div class="sub-service">
+                            <img  src="images/service1.jpg" alt="service1">
+                            <h3>3D Services</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cumque.</p>
+                        </div>
+                        <div class="sub-service">
+                            <h3>Web Services</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cumque.</p>
+                            <img  src="images/service2.jpg" alt="service2">
+                        </div>
+                    </section>
+                </div>
+                <footer class="footer">
+                    <div class="inter-div">
+                        <div class="form-sec">
+                            <div class="headers">
+                                <h3>let's have a talk</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                            <form class="form" action="form.php">
+                                <input type="text" placeholder="name"><br>
+                                <input type="email" placeholder="email"><br>
+                                <input type="phone" placeholder="phone"><br>
+                                <input type="text" placeholder="message"><br>
+                                <button>send!</button>
+                            </form>
+                        </div>
+                        <div class="social-connects">
+                            <h5>Social Connects !</h5>
+                            <ul class="icons">
+                                <li><a id="icon" href="twitter"><img src="images/icons/twitter.svg" alt="twitter"></a></li>
+                                <li><a id="icon" href="github"><img src="images/icons/github.svg" alt="github"></a></li>
+                                <li><a id="icon" href="linkedin"><img src="images/icons/linkedin.svg" alt="linkedin"></a></li>
+                                <li><a id="icon" href="mail"><img src="images/icons/mail.svg" alt="mail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/cursor.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/scroll.js"></script>
+
+</html>

@@ -1,0 +1,203 @@
+@import 'variables';
+//outer wrapper
+.outer-wrapper{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+//content section
+.content{
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    position: fixed;
+
+    //hero section
+    .hero{
+        max-width: 100vw;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("/images/bg.png");
+        background-size: contain;
+        background-position: center 5vh;
+        background-repeat: no-repeat;
+        h2{
+            width: 95vw;
+        }
+    }
+}
+
+main{
+    scroll-snap-align: start;
+}
+//rocky bg section
+.rock-bg{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    // background-image: url("/images/sec-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+//about section
+//my skills
+.my-skills{
+    display: flex;
+    align-items: center;
+    h2{
+        margin: 2rem;
+    }
+    .skills{
+        margin: 4rem;
+        h3{
+            color: $secondary-color;
+            font-family: $sf;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        .sub-skills{
+            display: flex;
+            .row{
+                margin: 1rem;
+            }
+            li{
+                font-family: $sf;
+                font-size: 1.25rem;
+                color: $tertiary-color;
+                text-transform: uppercase;
+                width: 8rem;
+                margin: .5rem;
+            }
+            .three{
+                li{
+                    width: 16rem;
+                }
+            }
+        }
+    }
+}
+
+//services
+.services{
+    display: flex;
+    align-items: center;
+
+    .sub-service{
+        margin: 0 4rem;
+        p{
+            font-size: 1.25rem;
+        }
+        img{
+            height: 60vh;
+            width: auto;
+            margin-bottom: 2rem;
+            border: none;
+        }
+    }
+}
+
+//footer
+.footer{
+    background: $overlay-color;
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form-sec{
+        display: flex;
+        align-items: center;
+
+        .headers{
+            margin: 4rem;
+            width: 20rem;
+            h3{
+                color: $bg-color;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .form{
+        input{
+            padding: .75rem 0;
+            border: none;
+            color: $bg-color;
+            font-size: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid $bg-color;
+            background-color: transparent;
+            margin: .25rem;
+            &::placeholder {
+                color: $bg-color;
+            }
+        }
+        button{
+            color: $secondary-color;
+            font-size: 1.25rem;
+            font-weight: 600;
+            background-color: $bg-color;
+            padding: .5rem 1rem;
+            margin: .5rem;
+        }
+    }
+
+    //social connects
+    .social-connects{
+        width: 100%;
+        text-align: center;
+        h5{
+            color: $bg-color;
+            font-size: 1.5rem;
+            font-family: $orelo;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                margin: 2rem;
+                max-width: 2rem;
+                max-height: 2rem;
+                width: 2rem;
+                height: auto;
+
+                &:hover {
+                    animation: zoom 200ms $transition-type;
+                }
+            }
+        }
+    }
+}
+//responsive css
+
+@media only screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    //hero section
+    .hero{
+        p{
+            font-size: 2rem;
+        }
+    }
+}

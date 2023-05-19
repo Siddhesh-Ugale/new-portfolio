@@ -1,0 +1,64 @@
+@import 'components/cursor','components/main','components/menu','components/variables','components/loader';
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+    font-family: $orelo;
+    background-color: black;
+    color: $overlay-color;
+    max-height: 100vh;
+}
+
+//hiding content universally
+#elements{
+    visibility: hidden;
+    transition: all .2s;
+}
+
+//set universal elements
+.highligher{
+	color: $secondary-color;
+    font-family: $orelo-bold
+}
+.sec-highligher{
+    color: $tertiary-color;
+    font-family: $orelo-bold
+}
+
+.sub{
+    font-family: $sf, Courier, monospace;
+}
+
+h2{
+    font-size: 5.25rem;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: $sf;
+    padding: 1rem 0;
+    color: $tertiary-color;
+}
+
+section{
+    padding: 6rem;
+}
+
+h3{
+    font-size: 4rem;       
+    text-transform: uppercase;
+}
+
+//scrollbar
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: $secondary-color; 
+}
+
