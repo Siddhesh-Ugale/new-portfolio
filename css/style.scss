@@ -38,6 +38,10 @@ h2{
     text-transform: uppercase;
 }
 
+a{
+    text-decoration: none;
+}
+
 p{
     font-size: 1.5rem;
     font-family: $sf;
@@ -53,6 +57,18 @@ h3{
     font-size: 4rem;       
     text-transform: uppercase;
 }
+
+h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+h5{
+    font-family: $sf;
+    color: white;
+    font-size: 1.25rem;
+}
+
 
 //scrollbar
 ::-webkit-scrollbar {

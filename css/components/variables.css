@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=variables.css.map */
+@font-face {
+  font-family: 'Orelo Wide';
+  src: url("Orelo Wide Regular.otf");
+}
+
+@font-face {
+  font-family: 'Orelo Wide Heavy';
+  src: url("Orelo Wide Heavy.otf");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SFPRODISPLAYREGULAR.OTF");
+}
+/*# sourceMappingURL=variables.css.map */

@@ -36,6 +36,21 @@
   color: white;
 }
 
+@font-face {
+  font-family: 'Orelo Wide';
+  src: url("Orelo Wide Regular.otf");
+}
+
+@font-face {
+  font-family: 'Orelo Wide Heavy';
+  src: url("Orelo Wide Heavy.otf");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SFPRODISPLAYREGULAR.OTF");
+}
+
 .outer-wrapper {
   position: absolute;
   width: 100vh;
@@ -46,6 +61,7 @@
           transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-image: url("./images/bg.png");
 }
 
 .content {
@@ -78,7 +94,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/images/bg.png");
   background-size: contain;
   background-position: center 5vh;
   background-repeat: no-repeat;
@@ -103,6 +118,16 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+}
+
+.about .bordered-text svg {
+  display: block;
+}
+
+.about .bordered-text text {
+  fill: black;
+  stroke: white;
+  stroke-width: 1;
 }
 
 .my-skills {
@@ -297,6 +322,21 @@ main {
   .hero p {
     font-size: 2rem;
   }
+}
+
+@font-face {
+  font-family: 'Orelo Wide';
+  src: url("Orelo Wide Regular.otf");
+}
+
+@font-face {
+  font-family: 'Orelo Wide Heavy';
+  src: url("Orelo Wide Heavy.otf");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SFPRODISPLAYREGULAR.OTF");
 }
 
 @-webkit-keyframes zoom {
@@ -557,6 +597,36 @@ main {
   }
 }
 
+@font-face {
+  font-family: 'Orelo Wide';
+  src: url("Orelo Wide Regular.otf");
+}
+
+@font-face {
+  font-family: 'Orelo Wide Heavy';
+  src: url("Orelo Wide Heavy.otf");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SFPRODISPLAYREGULAR.OTF");
+}
+
+@font-face {
+  font-family: 'Orelo Wide';
+  src: url("Orelo Wide Regular.otf");
+}
+
+@font-face {
+  font-family: 'Orelo Wide Heavy';
+  src: url("Orelo Wide Heavy.otf");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SFPRODISPLAYREGULAR.OTF");
+}
+
 .load {
   background: none #000;
   width: 100%;
@@ -659,6 +729,10 @@ h2 {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 1.5rem;
   font-family: "SF Pro Display";
@@ -673,6 +747,17 @@ section {
 h3 {
   font-size: 4rem;
   text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "SF Pro Display";
+  color: white;
+  font-size: 1.25rem;
 }
 
 ::-webkit-scrollbar {
